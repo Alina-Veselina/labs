@@ -1,0 +1,15 @@
+//5.1
+//Найти расстояние между двумя точками с заданными координатами (x1, y1) и (x2, y2) 
+#include <iostream> //подключение необходимых библиотек
+#include <math.h>
+using namespace std;
+int main()
+{
+	float x1, y1, x2, y2, d; //объявление переменных
+cout << "Enter first coordinate" << endl;
+cin >> x1 >> y1; //Ввод координат
+cout << "Enter second coordinate" << endl;
+cin >> x2 >> y2;
+d = sqrt(pow((x2 - x1), 2) + pow((y2 - y1), 2));// вычисление рассотяния между координатами по формуле
+cout << "distance = " << d << endl; //Вывод результата
+}
